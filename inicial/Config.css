@@ -6,7 +6,7 @@
      ============================ */
   --primary: #e7a740;        /* cor principal (ex.: botões primários) */
   --primary-light: #df9029;  /* variante clara (ex.: foco ou bordas) */
-  --primary-dark: #c9d0d8;   /* variante escura (hover, ativo) */
+  --primary-dark: #02254e;   /* variante escura (hover, ativo) */
 
   /* ============================
      GRAYS / NEUTROS
@@ -14,7 +14,7 @@
      - Use para textos, fundos, bordas e superfícies
      ============================ */
   --gray-50:  #042950; /* fundo principal (atualmente usado como bg) */
-  --gray-100: #dce0ec; /* superfícies claras: cards, painéis */
+  --gray-100: #e1e6f5; /* superfícies claras: cards, painéis */
   --gray-200: #6380c0; /* bordas e divisores */
   --gray-300: #6f7379; /* texto secundário / meta */
   --gray-400: #9ca3af; /* ícones e labels menos proeminentes */
@@ -80,7 +80,7 @@ body {
 
 [data-theme="dark"] {
   --gray-50: #b5bac5;
-  --gray-100: #1f2937;
+  --gray-100: #f2f4f7;
   --gray-200: #374151;
   --gray-300: #4b5563;
   --gray-400: #6b7280;
@@ -238,7 +238,7 @@ img.profile-photo {
   display: flex;
   align-items: center;
   padding: var(--space-md) var(--space-lg);
-  background-color: white;
+  background-color: #042950;
   border-bottom: 1px solid var(--gray-200);
   height: 60px;
   gap: var(--space-md);
@@ -249,6 +249,21 @@ img.profile-photo {
   border-bottom-color: var(--gray-300);
 }
 
+.date{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+
+.time{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -256,6 +271,12 @@ img.profile-photo {
   font-weight: 600;
   font-size: 1.25rem;
   color: var(--gray-900);
+}
+
+
+.brand-name {
+  font-size: 1.25rem;
+  color: #f59e0b;
 }
 
 .brand-mark {
@@ -394,8 +415,8 @@ img.profile-photo {
   transition: background-color 0.2s, box-shadow 0.2s, opacity 0.2s;
 }
 .btn.primary {
-  background-color: var(--primary);
-  color: var(--gray-50);
+  background-color: #f59e0b;
+  color: #042950;
 }
 
 .edit-btn {
@@ -426,9 +447,23 @@ img.profile-photo {
   background-color: #4752c4;
 }
 
+.btn.icon.only {
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7ad19;
+    color: #020a13;
+}
 
-
-
+.btn.icon.only:hover {
+    background-color: #666c72;
+    color: #dbe6f1;
+    box-shadow: none;
+    border-radius: 8px;
+}
 
 
 /* Painel de detalhes */
